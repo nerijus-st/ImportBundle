@@ -13,8 +13,8 @@ use Doctrine\ORM\Query\ResultSetMapping;
 
 class DefaultController extends Controller
 {
-    public $newFiles = "C:\Users\Nerijus\Desktop\Import\New\*.csv";
-    public $doneDirectory = "C:\Users\Nerijus\Desktop\Import\Done\\";
+    public $newFiles = "C:\Import\New\*.csv";
+    public $doneDirectory = "C:\Import\Done\\";
 
     public function indexAction()
     {

@@ -2,6 +2,7 @@
 <div class = "well text-center">
     {% if countNewFiles == 0 %}
         <p>You don't have any new files to upload</p>
+        <p>Please add .csv files into C:/Import/new directory</p>
     {% else %}
         <p>You have {{ countNewFiles }} new files to upload</p>
         <a href={{ path('upload') }} class="btn btn-success" role="button">Upload</a>
