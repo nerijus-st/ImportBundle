@@ -32,8 +32,8 @@ class DefaultController extends Controller
      */
     public function uploadAction()
     {
-        $message = '';
         set_time_limit(1000);
+        $message = '';
 
         $files = glob($this->newFiles);
 
