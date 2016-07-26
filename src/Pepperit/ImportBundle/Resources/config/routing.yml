@@ -1,0 +1,6 @@
+pepperit_import_homepage:
+    path: /
+    defaults: { _controller: PepperitImportBundle:Default:index }
+upload:
+    path: /upload
+    defaults: { _controller: PepperitImportBundle:Default:upload}

@@ -1,0 +1,45 @@
+Pepperit\ImportBundle\Entity\Product:
+  type: entity
+  table: product
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    reference:
+      type: integer
+      length: 64
+      nullable: false
+      column: reference
+      unique: true
+    name:
+      type: string
+      length: 64
+      nullable: false
+      column: name
+    description:
+      type: string
+      length: 255
+      nullable: true
+      column: description
+    quantity:
+      type: integer
+      length: 12
+      nullable: false
+      column: quantity
+    price:
+      type: integer
+      length: 12
+      nullable: false
+      column: price
+    color:
+      type: string
+      length: 64
+      nullable: true
+      column: color
+    category_id:
+      type: string
+      length: 64
+      nullable: true
+      column: category_id

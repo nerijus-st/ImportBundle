@@ -1,0 +1,12 @@
+{% include 'PepperitImportBundle:Default:layouts/header.html.twig' %}
+<div class = "well text-center">
+    <h4>{{ message }}</h4>
+    <h5>Uploaded files:</h5>
+    {% for file in files %}
+        <ul>{{ file }}</ul>
+    {% endfor %}
+    {{ "now"|date("Y/m/d G:i:s") }}
+    <br>
+    <a href={{ path('homepage') }} class="btn btn-default" role="button">Index</a>
+</div>
+{% include 'PepperitImportBundle:Default:layouts/footer.html.twig' %}

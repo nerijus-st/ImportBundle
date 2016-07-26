@@ -1,0 +1,7 @@
+pepperit_import:
+    resource: "@PepperitImportBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

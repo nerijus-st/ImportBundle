@@ -1,0 +1,10 @@
+{% include 'PepperitImportBundle:Default:layouts/header.html.twig' %}
+<div class = "well text-center">
+    {% if countNewFiles == 0 %}
+        <p>You don't have any new files to upload</p>
+    {% else %}
+        <p>You have {{ countNewFiles }} new files to upload</p>
+        <a href={{ path('upload') }} class="btn btn-success" role="button">Upload</a>
+    {% endif %}
+</div>
+{% include 'PepperitImportBundle:Default:layouts/footer.html.twig' %}
